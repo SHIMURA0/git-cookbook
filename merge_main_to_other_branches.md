@@ -7,13 +7,11 @@
 首先，确保你在你的 `feature` 分支上。 你可以使用以下命令来检查当前所在分支：
 
 ```bash
-
 git branch
 ```
 
 这将列出所有本地分支，并用星号 (*) 标记当前所在分支。 如果你不在 feature 分支上，可以使用以下命令切换到该分支：
 ```bash
- 
 git checkout feature
 ```
 
