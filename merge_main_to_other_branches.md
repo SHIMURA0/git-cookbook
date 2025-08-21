@@ -14,6 +14,34 @@ git branch
 ```bash
 git checkout feature
 ```
+将 feature 替换为你的 feature 分支的实际名称
+
+## 2. 拉取 main 分支的最新更改
+
+在合并之前，确保你的本地 main 分支是最新的。 使用以下命令从远程仓库拉取 main 分支的最新更改：
+
+```bash
+git fetch origin main
+```
+
+这个命令会从远程仓库 origin 下载 main 分支的最新提交，但不会自动合并到你的本地 main 分支。
+
+接下来，更新你的本地 main 分支：
+
+```bash
+git checkout main
+git merge origin/main
+```
+
+或者，你可以使用更简洁的命令：
+
+```bash
+git checkout main
+git pull origin main
+```
+
+
+
 
 
 
