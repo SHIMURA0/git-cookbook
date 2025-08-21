@@ -39,6 +39,31 @@ git merge origin/main
 git checkout main
 git pull origin main
 ```
+```git pull``` 命令相当于 ```git fetch``` 和 ```git merge``` 的组合。它会从远程仓库下载最新更改并自动合并到你的本地分支。
+
+## 3. 合并 main 分支到 feature 分支
+现在，切换回你的 feature 分支：
+
+```bash
+git checkout feature
+```
+
+然后，使用以下命令将 main 分支合并到你的 feature 分支：
+
+```bash
+git merge main
+```
+
+这会将 main 分支的更改合并到你的 feature 分支
+
+## 5. 推送 feature 分支到远程仓库
+
+完成合并和解决冲突后，将你的 feature 分支推送到远程仓库：
+
+```bash
+git push origin feature
+```
+这将把你的本地 feature 分支的更改上传到远程仓库
 
 
 
